@@ -21,9 +21,7 @@ body {
     </head>
     <body>
         <div class="navbar navbar-expand-md navbar-light" style="padding: 12px 32px">
-            <a class="navbar-brand" href="{% url 'index' %}" style="color: #606060; margin-right: 38px">
-               <img src= "https://i.pinimg.com/564x/09/05/85/090585401505f54e69a1a5e218759171.jpg" height="35px" alt="">
-            </a>
+            
             {% if request.user.is_authenticated %}
                 <button class="compose-btn" id="compose"><span class="plus-sign"></span>Compose</button>
 
